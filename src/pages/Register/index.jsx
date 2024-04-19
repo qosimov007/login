@@ -68,6 +68,7 @@ function Register() {
       <div className="w-[400px] p-8 bg-[#161D2F] rounded-[20px]">
         <h2 className="text-4xl text-white mb-10">Sign Up</h2>
         <form onSubmit={handleSubmit}>
+        <h1 className="mb-2">Email</h1>
           <input
             type="text"
             placeholder="Email address"
@@ -79,6 +80,7 @@ function Register() {
           {errors.email && (
             <p className="text-red-500 text-sm mb-2">{errors.email}</p>
           )}
+          <h1 className="mb-2">Password</h1>
 
           <input
             type="password"
@@ -91,6 +93,7 @@ function Register() {
           {errors.password && (
             <p className="text-red-500 text-sm mb-2">{errors.password}</p>
           )}
+          <h1 className="mb-2"> Re   Password</h1>
 
           <input
             type="password"
